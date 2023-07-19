@@ -1,0 +1,36 @@
+/* Tablet Devices (Landscape) max-width 992px */
+@media only screen and (max-width: 62em) {
+  .header-container {
+    padding: 0 2rem;
+  }
+}
+/* Tablet Devices (Port-rate) max-width 768px */
+@media only screen and (max-width: 48em) {
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 5rem;
+  }
+}
+/* Mobile Devices max-width 576px*/
+@media only screen and (max-width: 36em) {
+  .header-section {
+    box-shadow: none;
+  }
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-bottom: 7.8rem;
+    gap: 6.2rem;
+  }
+  .nav .nav-list .list-item:last-child {
+    margin-top: 2.6rem;
+  }
+  .nav .nav-list {
+    justify-content: center;
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+}
