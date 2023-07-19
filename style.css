@@ -1,0 +1,80 @@
+/* ========
+global css  
+======== */
+:root {
+  --color-primary: #ff42a5;
+  --color-secondary: #4ec5f7;
+  --color-light-1: #fff;
+  --color-light-2: rgba(255, 255, 255, 0.6);
+  --color-light-3: rgba(11, 2, 35, 0.10)
+  --color-dark-1: #0b0223;
+  --color-dark-2: #534c64;
+  --color-gradient-1: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --color-gradient-2: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  --color-gradient-3: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  --font-primary: "Work Sans", sans-serif;
+  --conatiner-width: 144rem;
+  --sec-padding-small:9.5rem 0;
+  --sec-padding-medium:12rem 0;
+  --sec-padding-big:15rem 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; /* 1 rem = 10px */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+.btn{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    padding: 1.5rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.btn-primary{
+    background-color: var(--color-primary);
+    color: var(--color-light-1);
+}
+.btn-seconday{
+    background-color: var(--color-secondary);
+    color: var(--color-light-1);
+}
+.btn-light{
+    background-color: var(--color-light-1);
+    color: var(--color-primary);
+}
