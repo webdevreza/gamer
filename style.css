@@ -3,7 +3,9 @@ global css
 ======== */
 :root {
   --color-primary: #ff42a5;
+  --color-primary-hover: #e52087;
   --color-secondary: #4ec5f7;
+  --color-secondary-hover: #27a9df;
   --color-light-1: #fff;
   --color-light-2: rgba(255, 255, 255, 0.6);
   --color-light-3: rgba(11, 2, 35, 0.1);
@@ -64,18 +66,24 @@ img {
   font-weight: 400;
   line-height: 1;
   text-align: center;
-  padding: 1.5rem 3rem;
-  border-radius: 0.5rem;
+  padding: 2rem 4rem;
+  border-radius: 4.8rem;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s linear;
 }
 .btn-primary {
   background-color: var(--color-primary);
   color: var(--color-light-1);
 }
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
 .btn-seconday {
   background-color: var(--color-secondary);
   color: var(--color-light-1);
+}
+.btn-seconday:hover {
+  background-color: var(--color-secondary-hover);
 }
 .btn-light {
   background-color: var(--color-light-1);
@@ -88,7 +96,8 @@ img {
 /* ========
 Header section
 ======== */
-.header-section {
+/* header-menu-bar */
+.header-menu-bar {
   box-shadow: 0px 0.4rem 3rem 0px rgba(0, 0, 0, 0.05);
 }
 .header-container {
@@ -96,8 +105,6 @@ Header section
   justify-content: space-between;
   align-items: center;
   min-height: 13rem;
-}
-.logo {
 }
 .logo .logo-link {
   display: flex;
@@ -114,17 +121,11 @@ Header section
 .logo .logo-name span {
   color: var(--color-primary);
 }
-
-.nav {
-}
 .nav .nav-list {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 3.2rem;
-}
-
-.nav .nav-list .list-item {
 }
 .nav .nav-list .list-item .list-link {
   color: var(--color-dark-3);
@@ -146,7 +147,6 @@ Header section
 .nav .nav-list .list-item .list-link:hover::before {
   width: 100%;
 }
-
 .nav-social {
   display: flex;
   align-items: center;
@@ -161,10 +161,6 @@ Header section
   font-weight: 500;
   margin-right: 0.8rem;
 }
-
-.nav-social .nav-social-icon {
-}
-
 .nav-social .nav-social-icon a {
   display: inline-block;
   transform: scale(1);
@@ -174,5 +170,59 @@ Header section
   transform: scale(1.1);
 }
 
-.nav-social .nav-social-icon a img {
+/* Header-hero */
+.header-hero {
+  background-image: url(img/bg-shape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-left {
+  padding: var(--sec-padding-big);
+}
+.hero-left .hero-title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+.hero-left .hero-title span {
+  font-size: 95px;
+  line-height: 11rem;
+  font-weight: 800;
+  background-image: var(--color-gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-left .hero-list {
+  margin-bottom: 4rem;
+}
+.hero-left .hero-list .hero-list-item {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.7rem;
+}
+.hero-left .hero-list .hero-list-item span {
+  color: #534c64;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.buttons-pair {
+  display: flex;
+  gap: 2.4rem;
+}
+.hero-right {
+  align-self: flex-end;
+  padding-left: 6.8rem;
+}
+.hero-right .hero-img {
+  width: 100%;
+  max-width: 71rem;
 }
